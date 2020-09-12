@@ -1,0 +1,135 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		text-decoration: none;
+		text-transform: uppercase;
+		display: inline-block;
+		background-color: $color-white;
+		color: $color-secondary-dark;
+	}
+
+	&--big {
+		padding: 1.5rem 6rem;
+		font-size: $text-size-default;
+		font-weight: 500;
+
+		@media (max-width: 425px) {
+			padding: 1.2rem 4rem;
+			font-size: 1.4rem;
+		}
+	}
+
+	&--small {
+		padding: 0.75rem 2rem;
+		font-size: 1rem;
+		font-weight: 700;
+
+		@media (max-width: 500px) {
+			padding: 0.5rem 2rem !important;
+		}
+	}
+
+	&--smallest {
+		padding: 0.75rem 1rem;
+		font-size: 1rem;
+		font-weight: 700;
+
+		@media (max-width: 515px) {
+			padding: 0.5rem 0.5rem !important;
+			font-size: 0.85rem !important;
+		}
+
+		@media (max-width: 475px) {
+			font-size: 0.75rem !important;
+		}
+	}
+
+	&--downloadable-resume {
+		border-radius: 10rem;
+		transition: transform 0.2s ease-out;
+	}
+
+	& .btn__label {
+		display: inline-block;
+		transition: transform 0.25s ease-out;
+	}
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+		& ~ .download-icon {
+			opacity: 1;
+			transform: translate(-60%, -40%);
+			color: $color-primary-light;
+		}
+
+		& .btn__label {
+			transform: translateX(-1.5rem);
+		}
+	}
+
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+	}
+
+	&--navigation {
+		background-color: $color-white;
+		border: 1px solid rgba($color-primary-dark, 0.85);
+		transition: transform 0.225s ease;
+		color: $color-primary-dark;
+		outline: none;
+
+		@media (max-width: 500px) {
+			display: inline-block;
+			padding: 1.2rem 4rem;
+			font-size: 1.4rem;
+		}
+
+		@media (max-width: 380px) {
+			display: inline-block;
+			padding: 1.2rem 4rem;
+			font-size: 1.2rem;
+		}
+		&-1 {
+			border-radius: 10rem 0 0 10rem;
+		}
+
+		&-2 {
+			border-radius: 0 10rem 10rem 0;
+		}
+	}
+}
+
+.download-icon {
+	font-size: 2.25rem;
+	display: inline-block;
+	color: rgba($color-secondary-light, 0.85);
+	position: absolute;
+	top: 40%;
+	left: 60%;
+	transform: translate(-60%, -90%);
+	opacity: 0;
+	transition: transform 0.3s ease-out, opacity 0.25s ease;
+}
+
+.btn-container {
+	&__left {
+		text-align: right;
+	}
+}
+
+.btn-active {
+	background-color: $color-primary-light;
+	color: $color-white;
+	border: none;
+	// transform: translateY(2px);
+	box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}
+
+.btn-active:hover {
+	transform: translateY(0px) !important;
+	box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+}

@@ -1,0 +1,93 @@
+.admin {
+	color: #c4c4c4;
+
+	&__nav-list {
+		width: 15%;
+		background-color: #0c1218;
+		float: left;
+		height: 110vh;
+		font-size: 20px;
+		list-style: none;
+		padding: 40px 0;
+
+		& > li {
+			padding: 5px 15px;
+			cursor: pointer;
+		}
+
+		& li:hover {
+			background-color: rgba(61, 89, 97, 0.6);
+		}
+	}
+
+	&__work-panel {
+		width: 85%;
+		background-color: $color-white;
+		float: left;
+		height: 100vh;
+	}
+}
+
+.list-active-btn {
+	background-color: #3d5961;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.form {
+	font-size: 25px;
+	padding: 45px;
+
+	&__part {
+		margin-bottom: 20px;
+
+		&-label,
+		&-input {
+			display: inline-block;
+		}
+
+		&-label {
+			width: 300px;
+			text-align: left;
+		}
+
+		&-input {
+			width: 300px;
+			padding: 5px;
+
+			&-radio {
+				font-size: 20px;
+				display: inline-block;
+				margin: 0 10px;
+			}
+		}
+
+		&-figure {
+			margin-left: 300px;
+			width: 300px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		&-remove {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: rgba(255, 0, 0, 0.5);
+			color: white;
+			padding: 5px 10px;
+			border-radius: 7px;
+			cursor: pointer;
+		}
+	}
+
+	&__submit-btn {
+		padding: 4px 16px;
+		font-size: 18px;
+		background-color: #383636;
+		border: none;
+		color: white;
+		margin-top: 20px;
+		border-radius: 5px;
+	}
+}

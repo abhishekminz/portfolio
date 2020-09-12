@@ -1,0 +1,27 @@
+.tool-tip {
+    background-color: rgba($color-black, .85);
+    border-radius: 3px;
+    border-bottom: none;
+    color: $color-primary-light;
+    padding: 0.6rem;
+    position: absolute;
+    top: -28px;
+    right: 13%;
+    visibility: hidden;
+}
+
+
+.tool-tip::after {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid rgba($color-black, .85);
+    left: 6px;
+    transform: rotate(-90deg);
+    bottom: -12px;
+}

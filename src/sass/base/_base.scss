@@ -1,0 +1,14 @@
+html {
+	// This is 1rem, 1rem = 10px
+	font-size: 62.5%;
+}
+
+body {
+	// padding: 5rem 5rem 0 5rem;
+	box-sizing: border-box;
+}
+
+.container--absolute-positioned {
+	position: relative;
+	height: 56px;
+}

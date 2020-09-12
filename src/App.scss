@@ -1,0 +1,22 @@
+@import "./sass/abstract/variables";
+@import "./sass/abstract/mixins";
+
+@import "./sass/base/base";
+@import "./sass/base/reset";
+@import "./sass/base/typography";
+@import "./sass/base/utilities";
+
+@import "./sass/components/button";
+@import "./sass/components/card";
+@import "./sass/components/contact";
+@import "./sass/components/projectCard";
+@import "./sass/components/scroll";
+@import "./sass/components/table";
+@import "./sass/components/toolTip";
+
+@import "./sass/pages/admin";
+@import "./sass/pages/home";
+@import "./sass/pages/signin";
+
+@import "./sass/layout/footer";
+@import "./sass/layout/grid";

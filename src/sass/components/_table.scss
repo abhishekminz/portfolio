@@ -1,0 +1,61 @@
+.table {
+	font-size: 16px;
+	border-collapse: collapse;
+
+	& .head-row {
+		background-color: $color-primary-dark;
+		color: white;
+		text-align: left;
+		font-weight: bold;
+		font-size: 18px;
+
+		& > th {
+			padding: 12px 15px;
+		}
+
+		&__title {
+			width: 20%;
+		}
+
+		&__description {
+			width: 35%;
+		}
+
+		&__technologies {
+			width: 35%;
+		}
+
+		&__delete {
+			width: 10%;
+		}
+	}
+
+	&__body {
+		color: #383636;
+
+		& > tr {
+			border-bottom: 1px solid $color-table-border-bottom;
+
+			& td {
+				padding: 12px 15px;
+			}
+		}
+
+		& > tr:nth-child(even) {
+			background-color: $color-table-row-even;
+		}
+
+		& > tr:last-child {
+			border-bottom: 2px solid $color-primary-dark;
+		}
+	}
+
+	&__btn {
+		background-color: #383636;
+		color: white;
+		border: none;
+		padding: 6px 12px;
+		border-radius: 6px;
+		outline: none;
+	}
+}
